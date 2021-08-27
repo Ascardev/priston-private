@@ -1,0 +1,323 @@
+#pragma once
+
+enum ECharacterState
+{
+	CHARACTERSTATE_None		= 0,
+	CHARACTERSTATE_NPC		= 1,
+	CHARACTERSTATE_Enemy	= 2,
+	CHARACTERSTATE_Use		= 3,
+};
+enum ECharacterClass : unsigned int
+{
+	CHARACTERCLASS_None				= 0x0000,
+
+	CHARACTERCLASS_Fighter			= 0x0001,
+	CHARACTERCLASS_Mechanican		= 0x0002,
+	CHARACTERCLASS_Pikenman			= 0x0004,
+	CHARACTERCLASS_Archer			= 0x0003,
+	CHARACTERCLASS_Assassin			= 0x0009,
+
+	CHARACTERCLASS_Knight			= 0x0006,
+	CHARACTERCLASS_Atalanta			= 0x0005,
+	CHARACTERCLASS_Priestess		= 0x0008,
+	CHARACTERCLASS_Magician			= 0x0007,
+	CHARACTERCLASS_Shaman			= 0x000A,
+
+	CHARACTERCLASS_Cyclops			= 0x1000,
+	CHARACTERCLASS_Hobgoblin		= 0x1010,
+	CHARACTERCLASS_Imp				= 0x1020,
+	CHARACTERCLASS_Minig			= 0x1030,
+	CHARACTERCLASS_Plant			= 0x1040,
+	CHARACTERCLASS_Skeleton			= 0x1050,
+	CHARACTERCLASS_Zombi			= 0x1060,
+	CHARACTERCLASS_Obit				= 0x1070,
+	CHARACTERCLASS_Hopt				= 0x1080,
+	CHARACTERCLASS_Bargon			= 0x1090,
+	CHARACTERCLASS_Leech			= 0x10A0,
+	CHARACTERCLASS_Mushroom			= 0x10B0,
+	CHARACTERCLASS_Arma				= 0x10C0,
+	CHARACTERCLASS_Scorpion			= 0x10D0,
+	CHARACTERCLASS_HeadCutter		= 0x1100,
+	CHARACTERCLASS_Sandlem			= 0x1110,
+	CHARACTERCLASS_Web				= 0x1120,
+	CHARACTERCLASS_HopyKing			= 0x1130,
+	CHARACTERCLASS_Crip				= 0x1140,
+	CHARACTERCLASS_Buma				= 0x1150,
+	CHARACTERCLASS_Decoy			= 0x1160,
+	CHARACTERCLASS_Doral			= 0x1170,
+	CHARACTERCLASS_Figon			= 0x1180,
+	CHARACTERCLASS_StoneGiant		= 0x1190,
+	CHARACTERCLASS_Greven			= 0x11A0,
+	CHARACTERCLASS_IllusionKnight	= 0x11B0,
+	CHARACTERCLASS_SkeletonRange	= 0x11C0,
+	CHARACTERCLASS_SkeletonMelee	= 0x11D0,
+	CHARACTERCLASS_Wolverlin		= 0x11E0,
+
+	CHARACTERCLASS_Rabie			= 0x1200,
+	CHARACTERCLASS_Mudy				= 0x1210,
+	CHARACTERCLASS_Sen				= 0x1220,
+	CHARACTERCLASS_Egan				= 0x1230,
+	CHARACTERCLASS_Beedog			= 0x1240,
+	CHARACTERCLASS_MutantPlant		= 0x1250,
+	CHARACTERCLASS_MutantRabie		= 0x1260,
+	CHARACTERCLASS_MutantTree		= 0x1270,
+	CHARACTERCLASS_Avelisk			= 0x1280,
+	CHARACTERCLASS_Naz				= 0x1290,
+	CHARACTERCLASS_Mummy			= 0x12A0,
+	CHARACTERCLASS_Hulk				= 0x12B0,
+	CHARACTERCLASS_Succubus			= 0x12C0,
+	CHARACTERCLASS_Dawlin			= 0x12D0,
+	CHARACTERCLASS_Shadow			= 0x12E0,
+	CHARACTERCLASS_Berserker		= 0x12F0,
+
+	CHARACTERCLASS_Ironguard		= 0x1300,
+	CHARACTERCLASS_Fury				= 0x1310,
+	CHARACTERCLASS_Sliver			= 0x1320,
+	CHARACTERCLASS_Hungky			= 0x1330,
+	CHARACTERCLASS_Ratoo			= 0x1340,
+	CHARACTERCLASS_StygianLord		= 0x1350,
+	CHARACTERCLASS_Omicron			= 0x1360,
+	CHARACTERCLASS_Dmachine			= 0x1370,
+	CHARACTERCLASS_Metron			= 0x1380,
+	CHARACTERCLASS_Mrghost			= 0x1390,
+	CHARACTERCLASS_Vampiricbat		= 0x13A0,
+	CHARACTERCLASS_Mirekeeper		= 0x13B0,
+	CHARACTERCLASS_Muffin			= 0x13C0,
+	CHARACTERCLASS_Solidsnail		= 0x13D0,
+	CHARACTERCLASS_Beevil			= 0x13E0,
+	CHARACTERCLASS_Direbee			= 0x13F0,
+
+	CHARACTERCLASS_NightMare		= 0x1400,
+	CHARACTERCLASS_StoneGolem		= 0x1410,
+	CHARACTERCLASS_ThornCrawler		= 0x1420,
+	CHARACTERCLASS_HeavyGoblin		= 0x1430,
+	CHARACTERCLASS_EvilPlant		= 0x1440,
+	CHARACTERCLASS_HauntingPlant	= 0x1450,
+	CHARACTERCLASS_DarkKngight		= 0x1460,
+	CHARACTERCLASS_GuardianSaint	= 0x1470,
+
+	CHARACTERCLASS_ChainGolem		= 0x1500,
+	CHARACTERCLASS_DeadZone			= 0x1510,
+	CHARACTERCLASS_GroteSque		= 0x1520,
+	CHARACTERCLASS_HyperMachine		= 0x1530,
+	CHARACTERCLASS_IronFist			= 0x1540,
+	CHARACTERCLASS_Morgon			= 0x1550,
+	CHARACTERCLASS_Mountain			= 0x1560,
+	CHARACTERCLASS_Rampage			= 0x1570,
+	CHARACTERCLASS_RunicGuardian	= 0x1580,
+	CHARACTERCLASS_Sadness			= 0x1590,
+	CHARACTERCLASS_TowerGolem		= 0x15A0,
+	CHARACTERCLASS_VampricBee		= 0x15B0,
+	CHARACTERCLASS_VampricMachine	= 0x15C0,
+	CHARACTERCLASS_Omu				= 0x15D0,
+	CHARACTERCLASS_AvelinArcher		= 0x15E0,
+	CHARACTERCLASS_AvelinQueen		= 0x15F0,
+
+	CHARACTERCLASS_Babel			= 0x1600,
+	CHARACTERCLASS_Mystic			= 0x1610,
+	CHARACTERCLASS_IceGoblin		= 0x1620,
+	CHARACTERCLASS_ColdEye			= 0x1630,
+	CHARACTERCLASS_Frozen			= 0x1640,
+	CHARACTERCLASS_Icegolem			= 0x1650,
+	CHARACTERCLASS_Frost			= 0x1660,
+	CHARACTERCLASS_ChaoScara		= 0x1670,
+	CHARACTERCLASS_DeathKnight		= 0x1680,
+
+	CHARACTERCLASS_GreateGreven		= 0x1700,
+	CHARACTERCLASS_LizardFolk		= 0x1710,
+	CHARACTERCLASS_MLord			= 0x1720,
+	CHARACTERCLASS_Spider			= 0x1730,
+	CHARACTERCLASS_Stingray			= 0x1740,
+	CHARACTERCLASS_Strider			= 0x1750,
+
+	CHARACTERCLASS_TurtleCannon		= 0x1800,
+	CHARACTERCLASS_DevilBird		= 0x1810,
+	CHARACTERCLASS_BlizzardGiant	= 0x1820,
+	CHARACTERCLASS_Kelvezu			= 0x1830,
+	CHARACTERCLASS_DarkPhalanx		= 0x1840,
+	CHARACTERCLASS_BloodyKnight		= 0x1850,
+	CHARACTERCLASS_ChiMera			= 0x1860,
+	CHARACTERCLASS_FireWorm			= 0x1870,
+	CHARACTERCLASS_HellHound		= 0x1880,
+	CHARACTERCLASS_DarkGuard		= 0x1890,
+	CHARACTERCLASS_DarkMage			= 0x18A0,
+	CHARACTERCLASS_Mokova			= 0x18B0,
+	CHARACTERCLASS_TempleGuard		= 0x18C0,
+	CHARACTERCLASS_Seto				= 0x18D0,
+	CHARACTERCLASS_KingSpider		= 0x18E0,
+	CHARACTERCLASS_RevivedKnight	= 0x18F0,
+
+	CHARACTERCLASS_RevivedMagician	= 0x1900,
+	CHARACTERCLASS_RevivedArcher	= 0x1910,
+	CHARACTERCLASS_RevivedAtalanta	= 0x1920,
+	CHARACTERCLASS_RevivedFigther	= 0x1930,
+	CHARACTERCLASS_RevivedMecanician= 0x1940,
+	CHARACTERCLASS_RevivedPikeman	= 0x1950,
+	CHARACTERCLASS_RevivedPriestess = 0x1960,
+	CHARACTERCLASS_DeadHopt			= 0x1970,
+	CHARACTERCLASS_DeadKingHopy		= 0x1980,
+	CHARACTERCLASS_Gorgon			= 0x1990,
+	CHARACTERCLASS_Hobogolem		= 0x19A0,
+	CHARACTERCLASS_Niken			= 0x19B0,
+	CHARACTERCLASS_Mimic			= 0x19C0,
+	CHARACTERCLASS_KingBat			= 0x19D0,
+	CHARACTERCLASS_GoblinShaman		= 0x19E0,
+	CHARACTERCLASS_Hest				= 0x19F0,
+
+	CHARACTERCLASS_Ruca				= 0x2100,
+	CHARACTERCLASS_Nazsenior		= 0x2110,
+	CHARACTERCLASS_Igolation		= 0x2120,
+	CHARACTERCLASS_Kakoa			= 0x2130,
+	CHARACTERCLASS_Sprin			= 0x2140,
+	CHARACTERCLASS_UnDeadMaple		= 0x2150,
+	CHARACTERCLASS_Xetan			= 0x2160,
+	CHARACTERCLASS_BebeChick		= 0x2170,
+	CHARACTERCLASS_PapaChick		= 0x2180,
+	CHARACTERCLASS_WaterMelon		= 0x2190,
+	CHARACTERCLASS_Bear				= 0x21A0,
+	CHARACTERCLASS_PumpKingHost		= 0x21B0,
+	CHARACTERCLASS_SnowMan			= 0x21C0,
+	CHARACTERCLASS_DevilShy			= 0x21D0,
+	CHARACTERCLASS_Sakura			= 0x21E0,
+	CHARACTERCLASS_Coma				= 0x21F0,
+
+	CHARACTERCLASS_BrazilBear		= 0x21F1,
+	CHARACTERCLASS_Boitata			= 0x21F2,
+	CHARACTERCLASS_RibbonHopy		= 0x21F3,
+
+	CHARACTERCLASS_IceSerpent		= 0x2200,
+	CHARACTERCLASS_IceWorm			= 0x2210,
+	CHARACTERCLASS_MineBat			= 0x2220,
+	CHARACTERCLASS_MineGolem		= 0x2230,
+	CHARACTERCLASS_SealCrasher		= 0x2240,
+	CHARACTERCLASS_TaranTulika		= 0x2250,
+	CHARACTERCLASS_Tulla			= 0x2260,
+	CHARACTERCLASS_UnDeadManager	= 0x2270,
+	CHARACTERCLASS_UnDeadMiner		= 0x2280,
+	CHARACTERCLASS_Billy			= 0x2290,
+	CHARACTERCLASS_Hound			= 0x22A0,
+	CHARACTERCLASS_Lena				= 0x22B0,
+	CHARACTERCLASS_Marionette		= 0x22C0,
+	CHARACTERCLASS_UnDeadStalker	= 0x22D0,
+	CHARACTERCLASS_KhanDoor			= 0x22E0,
+
+	CHARACTERCLASS_IteChnician		= 0x2300,
+	CHARACTERCLASS_LteChnician		= 0x2301,
+	CHARACTERCLASS_Lengineer		= 0x2302,
+	CHARACTERCLASS_Isoldier			= 0x2303,
+	CHARACTERCLASS_Ibomber			= 0x2304,
+	CHARACTERCLASS_LGuardian		= 0x2305,
+	CHARACTERCLASS_IElite			= 0x2306,
+	CHARACTERCLASS_Draxos			= 0x2307,
+	CHARACTERCLASS_LizardBigmama	= 0x2308,
+	CHARACTERCLASS_LizardCommander	= 0x2309,
+	CHARACTERCLASS_LizardDoctor		= 0x230A,
+	CHARACTERCLASS_LizardElder		= 0x230B,
+	CHARACTERCLASS_LizardPapa		= 0x230C,
+	CHARACTERCLASS_LizardSoldier	= 0x230D,
+	CHARACTERCLASS_LizardDoor		= 0x230E,
+
+	CHARACTERCLASS_Nihil			= 0x2344,
+	CHARACTERCLASS_Acero			= 0x2345,
+	CHARACTERCLASS_Chalybs			= 0x2346,
+	CHARACTERCLASS_Greedy			= 0x2347,
+	CHARACTERCLASS_Inferno			= 0x2348,
+	CHARACTERCLASS_Rguard			= 0x2349,
+	CHARACTERCLASS_DMyStery			= 0x234A,
+	CHARACTERCLASS_IGnis			= 0x234B,
+	CHARACTERCLASS_Najan			= 0x234C,
+	CHARACTERCLASS_Crios			= 0x234D,
+	CHARACTERCLASS_Wlord			= 0x234E,
+	CHARACTERCLASS_Midranda			= 0x234F,
+	CHARACTERCLASS_Dey				= 0x2350,
+	CHARACTERCLASS_Gurkob			= 0x2351,
+	CHARACTERCLASS_Shogoth			= 0x2352,
+	CHARACTERCLASS_Arhdyra			= 0x2353,
+	CHARACTERCLASS_Sathla			= 0x2354,
+	CHARACTERCLASS_Faugn			= 0x2355,
+	CHARACTERCLASS_Koon				= 0x2356,
+	CHARACTERCLASS_Yagditha			= 0x2357,
+	CHARACTERCLASS_CStone			= 0x2410,
+	CHARACTERCLASS_BlueMountain		= 0x2420,
+	CHARACTERCLASS_MorGonia			= 0x2430,
+	CHARACTERCLASS_RedEye			= 0x2440,
+	CHARACTERCLASS_TurTledRagon		= 0x2450,
+	CHARACTERCLASS_BoneHound		= 0x2460,
+	CHARACTERCLASS_Hestian			= 0x2470,
+
+	CHARACTERCLASS_Morif			= 0x2010,
+	CHARACTERCLASS_MollyWolf		= 0x2012,
+	CHARACTERCLASS_SkillMaster		= 0x2020,
+	CHARACTERCLASS_MagicMaster		= 0x2030,
+
+	CHARACTERCLASS_SnowWolverlin	= 0x3010,
+	CHARACTERCLASS_MetalGolem		= 0x3020,
+	CHARACTERCLASS_Elemental		= 0x3030,
+	CHARACTERCLASS_Arcuda			= 0x3040,
+	CHARACTERCLASS_CastleDoor		= 0x5010,
+	CHARACTERCLASS_CastleCrystalR	= 0x5020,
+	CHARACTERCLASS_CastleCrystalG	= 0x5021,
+	CHARACTERCLASS_CastleCrystalB	= 0x5022,
+	CHARACTERCLASS_CastleCrystalN	= 0x5023,
+	CHARACTERCLASS_CastleTower		= 0x5030,
+	CHARACTERCLASS_CastleSolderA	= 0x5100,
+	CHARACTERCLASS_CastleSolderB	= 0x5110,
+	CHARACTERCLASS_CastleSolderC	= 0x5120,
+};
+
+namespace CHARACTER
+{
+	struct CharInfo
+	{
+		std::string strName = "";
+		std::string strCharModel = "";
+		std::string strHeadModel = "";
+
+		DWORD dwHeadModelCode = 0;
+		ID iID;
+		int iClan = 0;
+		int iModelSize = 0;
+		ECharacterState eState = CHARACTERSTATE_None;
+		ECharacterClass eClass = CHARACTERCLASS_None;
+
+		int iLevel = 0;
+
+		int iStrength = 0;
+		int iSpirit = 0;
+		int iTalent = 0;
+		int iAgile = 0;
+		int iHealth = 0;
+
+		int iAttackRating = 0;
+		IMinMax sAttackDamage = IMinMax(0, 0);
+		int iAttackSpeed = 0;
+		int iShootingRange = 0;
+		int iCriticalHit = 0;
+
+		int iDefence = 0;
+		int iBlock = 0;
+		int iAbsorption = 0;
+		int iMoveSpeed = 0;
+		int iEvade = 0;
+		// ”“∞≥§∂»
+		int iSight = 0;
+		MinMax sWeight;
+
+		short DefenseResistance[8] = { 0 };
+		short AttackResistance[8] = { 0 };
+
+		IMinMax HP = IMinMax(0, 0);
+		IMinMax MP = IMinMax(0, 0);
+		IMinMax SP = IMinMax(0, 0);
+
+		float fHPRegen = 0.0f;
+		float fMPRegen = 0.0f;
+
+		INT64 iExp = 0;
+		INT64 iNextExp = 0;
+
+		int iGold = 0;
+
+		int iStatsPoint;
+	};
+}

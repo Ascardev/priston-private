@@ -1,0 +1,76 @@
+8
+
+dir
+66
+svn://10.10.20.33/JAPAN_PT1/SrcLang
+svn://10.10.20.33/JAPAN_PT1
+
+
+
+2009-04-07T03:38:15.984375Z
+1
+cicima
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5e240253-bf80-604a-ae82-23fa64f0436c
+
+jts.cpp
+file
+
+
+
+
+2009-04-07T04:30:05.140625Z
+e1faf7dbd44931c0cc66a9010699d275
+2009-04-07T03:38:15.984375Z
+1
+cicima
+
+사본 - jts.h
+file
+
+
+
+
+2009-04-07T04:30:05.156250Z
+fe714decc132121ab2f2bf075a6a9ff9
+2009-04-07T03:38:15.984375Z
+1
+cicima
+
+jts.h
+file
+
+
+
+
+2009-04-07T04:30:05.187500Z
+2abeea0744333c6d87e8329ce606c363
+2009-04-07T03:38:15.984375Z
+1
+cicima
+
+사본 - jts.cpp
+file
+
+
+
+
+2009-04-07T04:30:05.234375Z
+33a8a3b8c3eecc52af34f4b679d034c0
+2009-04-07T03:38:15.984375Z
+1
+cicima
+

@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47803b02-2bd3-42f3-afb1-65ff5b85bb3c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\smD3D">
+      <UniqueIdentifier>{85226e72-aee5-491c-92e1-96489240224e}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\smD3D\Header">
+      <UniqueIdentifier>{a3e258b1-826d-4ca9-9fad-d9bbeb7c502a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SinBaRam">
+      <UniqueIdentifier>{18956652-c69b-499b-91d8-4db0600e3e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SinBaRam\header">
+      <UniqueIdentifier>{0a79abe9-1870-43cb-8041-38b7ab8cd786}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Source Files\SinBaRam\SkillFunction">
+      <UniqueIdentifier>{62d8e83e-5cc7-42a4-91b0-d883a784a19c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HoDong">
+      <UniqueIdentifier>{da0ebb33-744d-4eb6-8bce-7ea19ef56c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HeaderFile">
+      <UniqueIdentifier>{91bb38f5-1117-4e44-8003-3e83544e385d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{a8bf9fc3-f3da-4eb0-a1f8-5dbabf07164b}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5f5e963e-3dc9-4918-9fbf-6f7adc27b414}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Header">
+      <UniqueIdentifier>{4795765d-899a-4ee1-9640-8f874a5fed90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networks">
+      <UniqueIdentifier>{c606045f-9057-46d2-b3c2-382cb63ff656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{d2e91584-bc21-492b-9b99-9f6ad89cbebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{36101614-0164-45f6-8cca-32e22ab7e6c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle">
+      <UniqueIdentifier>{51a6772c-8fd6-4021-a5bd-1cb95d56f2b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle">
+      <UniqueIdentifier>{a5cfd7a0-1ee2-43cc-8aa3-28ed26d4bffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle\Party">
+      <UniqueIdentifier>{52a2a2fd-6618-4a18-baed-fd0976b94c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle\Party">
+      <UniqueIdentifier>{9b251a7e-1521-4cf2-a2a0-ecdf565d8e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle\Quest">
+      <UniqueIdentifier>{3d75d43d-d137-4741-a195-7b4d287d813a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle\Quest">
+      <UniqueIdentifier>{32c8f799-c240-4d45-8124-2551e95650ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shared">
+      <UniqueIdentifier>{93dc2d7c-9816-4c8d-9143-0911292d4f4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shared\Base">
+      <UniqueIdentifier>{463b42a4-a60a-4a5d-bbe0-18dc506c6094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shared\Debug">
+      <UniqueIdentifier>{d759ec83-fac3-463f-bbce-2fd3654ed27e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shared\File">
+      <UniqueIdentifier>{6fdf40eb-59f4-48df-ba1b-b50d6a45feac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shared\Globals">
+      <UniqueIdentifier>{a6261afc-98c6-4f64-a5a3-7da8be0b6485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shared\Mutex">
+      <UniqueIdentifier>{9a6a1a72-3f4b-40aa-a863-2acb96fc494b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shared">
+      <UniqueIdentifier>{fba18a71-3b75-45aa-9828-254a6cf6e4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shared\Base">
+      <UniqueIdentifier>{d6341512-fcba-4118-a943-20ab1fc3bfab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shared\Debug">
+      <UniqueIdentifier>{668ad123-8374-46e2-8a53-00928f475fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shared\File">
+      <UniqueIdentifier>{0ea9cb08-0057-462f-8e64-aab9b631aa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shared\Globals">
+      <UniqueIdentifier>{a60924e6-7006-4863-bfc1-ac6396f3db3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shared\Mutex">
+      <UniqueIdentifier>{88780caa-69c2-4044-82dd-d3200166fd8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle\Christmas">
+      <UniqueIdentifier>{69f6903f-69cc-4982-b468-e535934b0e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle\Christmas">
+      <UniqueIdentifier>{e6f08800-0971-481a-bde1-080dccca9636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle\Skill">
+      <UniqueIdentifier>{8d6c1e18-0df7-4d68-89ac-1da1aa94a2f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle\Skill">
+      <UniqueIdentifier>{52d26d33-ac8f-4c98-8be1-8fdb8e4d623f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle\CoinShop">
+      <UniqueIdentifier>{40aabb8b-467b-4701-92e7-eab6c2d7ddd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle\CoinShop">
+      <UniqueIdentifier>{59d4b54a-56e4-44e5-932b-bfc1b2775df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle\Age">
+      <UniqueIdentifier>{9cc15618-f2a5-40ec-b0f5-9b9e4686648a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle\Age">
+      <UniqueIdentifier>{f59b604d-d1e8-48eb-9397-4095fbb275c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle\Mix">
+      <UniqueIdentifier>{4667e51b-25b9-4b8c-8637-9842fd8019f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle\Mix">
+      <UniqueIdentifier>{e4fae362-6563-426d-9f67-384c3ddeb249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Handle\Distributor">
+      <UniqueIdentifier>{3802259d-25ba-4064-aafb-df5b54e8fac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Handle\Distributor">
+      <UniqueIdentifier>{0b72c2d0-7ade-4429-b6e6-3d975aef1c70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="checkdll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playsub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="record.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillSub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smgeosub.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smMap3d.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smmatrix.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smObj3d.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smRead3d.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smSin.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smStage3d.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smStgObj.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smTexture.cpp">
+      <Filter>Source Files\smD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\sinItem.cpp">
+      <Filter>Source Files\SinBaRam</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\sinMain.cpp">
+      <Filter>Source Files\SinBaRam</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\sinQuest.cpp">
+      <Filter>Source Files\SinBaRam</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\sinSkill.cpp">
+      <Filter>Source Files\SinBaRam</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\sinSkill_Info.cpp">
+      <Filter>Source Files\SinBaRam</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\sinSubMain.cpp">
+      <Filter>Source Files\SinBaRam</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\sinTrade.cpp">
+      <Filter>Source Files\SinBaRam</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\SkillFunction\Morayion.cpp">
+      <Filter>Source Files\SinBaRam\SkillFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="sinbaram\SkillFunction\Tempskron.cpp">
+      <Filter>Source Files\SinBaRam\SkillFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="SrcServer\ClientFuncPos.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="SrcServer\DllServer.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="SrcServer\gameSQL.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="netplay.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="SrcServer\OnSever.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="SrcServer\openlive.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="SrcServer\PartySever.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="SrcServer\Svr_Damge.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="SrcServer\svrEventSpawn.cpp">
+      <Filter>Source Files\Networks</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Header Files\Header</Filter>
+    </ClCompile>
+    <ClCompile Include="Winmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerSocket.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerInfo.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Server.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerUser.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerPackets.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerLog.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerCharacter.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerUnit.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerChat.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerMap.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerItem.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerNet.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerCommand.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerWindow.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\SQLConnection.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerPvP.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerAccount.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerUserInfo.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerHandle.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Handle\PartyHandler.cpp">
+      <Filter>Source Files\Server\Handle\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Handle\QuestHandle.cpp">
+      <Filter>Source Files\Server\Handle\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerBellatra.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Application.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Characters.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\map.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\ProcessEx.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\socket.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\System.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Time.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\user.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Window.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Base\Event.cpp">
+      <Filter>Source Files\Shared\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Base\EventHandler.cpp">
+      <Filter>Source Files\Shared\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Base\Node.cpp">
+      <Filter>Source Files\Shared\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Base\Timer.cpp">
+      <Filter>Source Files\Shared\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Debug\Debug.cpp">
+      <Filter>Source Files\Shared\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\File\FileBin.cpp">
+      <Filter>Source Files\Shared\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\File\FileIni.cpp">
+      <Filter>Source Files\Shared\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Globals\cipher.cpp">
+      <Filter>Source Files\Shared\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Globals\common.cpp">
+      <Filter>Source Files\Shared\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Globals\point.cpp">
+      <Filter>Source Files\Shared\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Globals\strings.cpp">
+      <Filter>Source Files\Shared\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Mutex\Mutex.cpp">
+      <Filter>Source Files\Shared\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Handle\ChristmasHandle.cpp">
+      <Filter>Source Files\Server\Handle\Christmas</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerBlessCastle.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Handle\Skill\Priestess.cpp">
+      <Filter>Source Files\Server\Handle\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Handle\Skill\SkillHandle.cpp">
+      <Filter>Source Files\Server\Handle\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerQuest.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Handle\CoinShopHandle.cpp">
+      <Filter>Source Files\Server\Handle\CoinShop</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Handle\AgeHandle.cpp">
+      <Filter>Source Files\Server\Handle\Age</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\coin.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\CoinShop.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\CoinShopItem.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\CoinShopTab.cpp">
+      <Filter>Source Files\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Handle\DistributorHandle.cpp">
+      <Filter>Source Files\Server\Handle\Distributor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AreaServer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemForm.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playmodel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="smPacket.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smGeosub.h">
+      <Filter>Source Files\smD3D\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smMap3d.h">
+      <Filter>Source Files\smD3D\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smObj3d.h">
+      <Filter>Source Files\smD3D\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smSin.h">
+      <Filter>Source Files\smD3D\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smStage3d.h">
+      <Filter>Source Files\smD3D\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smStgObj.h">
+      <Filter>Source Files\smD3D\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smTexture.h">
+      <Filter>Source Files\smD3D\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smType.h">
+      <Filter>Source Files\smD3D\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\sinCraftItem.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\sinItem.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\sinLinkHeader.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\sinMain.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\sinQuest.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\sinSkill.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\sinSubMain.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\sinTrade.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\SkillFunction\Morayion.h">
+      <Filter>Source Files\SinBaRam\SkillFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="sinbaram\SkillFunction\Tempskron.h">
+      <Filter>Source Files\SinBaRam\SkillFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="HoBaram\HoLinkHeader.h">
+      <Filter>Source Files\HoDong</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\E_serverlog.h">
+      <Filter>Source Files\Networks</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\Gamesql.h">
+      <Filter>Source Files\Networks</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\openlive.h">
+      <Filter>Source Files\Networks</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\svrEventGame.h">
+      <Filter>Source Files\Networks</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\svrEventSpawn.h">
+      <Filter>Source Files\Networks</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\svrHaQuest.h">
+      <Filter>Source Files\Networks</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\DllServer.h">
+      <Filter>Source Files\HeaderFile</Filter>
+    </ClInclude>
+    <ClInclude Include="language.h">
+      <Filter>Source Files\HeaderFile</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\onserver.h">
+      <Filter>Source Files\HeaderFile</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\ServerMsg.h">
+      <Filter>Source Files\HeaderFile</Filter>
+    </ClInclude>
+    <ClInclude Include="SrcServer\svr_Damage.h">
+      <Filter>Source Files\HeaderFile</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="netplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playmain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playsub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillSub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="effectsnd.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smd3d.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smmatrix.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="smlib3d\smRead3d.h">
+      <Filter>Source Files\SinBaRam\header</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NetType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Servercore.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerSocket.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerInfo.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Server.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerUser.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerPackets.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerLog.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerCharacter.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerUnit.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerMap.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerChat.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerItem.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerNet.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerCommand.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerWindow.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\SQLConnection.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerPvP.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerAccount.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerUserInfo.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerHandle.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\Handle.h">
+      <Filter>Header Files\Server\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\QuestHandle.h">
+      <Filter>Header Files\Server\Handle\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerBellatra.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\account.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Application.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Characters.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\chat.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\CPoint.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Dialog.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\item.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Language.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\List.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\map.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Packets.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\party.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\premiumstruct.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\ProcessEx.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Shared.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\skill.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\socket.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\sound.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\System.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Time.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Unit.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\user.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Window.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Base\Base.h">
+      <Filter>Header Files\Shared\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Base\Event.h">
+      <Filter>Header Files\Shared\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Base\EventHandler.h">
+      <Filter>Header Files\Shared\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Base\Node.h">
+      <Filter>Header Files\Shared\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Base\Timer.h">
+      <Filter>Header Files\Shared\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Debug\Debug.h">
+      <Filter>Header Files\Shared\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\File\File.h">
+      <Filter>Header Files\Shared\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\File\FileBin.h">
+      <Filter>Header Files\Shared\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\File\FileIni.h">
+      <Filter>Header Files\Shared\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Globals\cipher.h">
+      <Filter>Header Files\Shared\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Globals\common.h">
+      <Filter>Header Files\Shared\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Globals\def.h">
+      <Filter>Header Files\Shared\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Globals\memory.h">
+      <Filter>Header Files\Shared\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Globals\point.h">
+      <Filter>Header Files\Shared\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Globals\strings.h">
+      <Filter>Header Files\Shared\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Mutex\Mutex.h">
+      <Filter>Header Files\Shared\Mutex</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\ChristmasHandle.h">
+      <Filter>Header Files\Server\Handle\Christmas</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\PartyHandle.h">
+      <Filter>Header Files\Server\Handle\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerBlessCastle.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\Skill\Priestess.h">
+      <Filter>Header Files\Server\Handle\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\Skill\SkillHandle.h">
+      <Filter>Header Files\Server\Handle\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerQuest.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\CoinShopHandle.h">
+      <Filter>Header Files\Server\Handle\CoinShop</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\AgeHandle.h">
+      <Filter>Header Files\Server\Handle\Age</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\MixHandle.h">
+      <Filter>Header Files\Server\Handle\Mix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\coin.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\CoinShop.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\CoinShopItem.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\CoinShopTab.h">
+      <Filter>Header Files\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Handle\DistributorHandle.h">
+      <Filter>Header Files\Server\Handle\Distributor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="8888.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Server.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

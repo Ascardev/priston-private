@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{1CBA7615-D4B3-4309-ABCA-226F422AA862}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>Server</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\MyMoment\Downloads\PT Online\Server;$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\MyMoment\Downloads\PT Online\Server;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\PT Online\Server;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Win32_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Win32_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Win32_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dsound.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>Libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\runmap3d___Win32_Debug/runmap3d.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/runmap3d.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dsound.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release/game.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/runmap3d.tlb</TypeLibraryName>
+    </Midl>
+    <PostBuildEvent>
+      <Command>cmd</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Shared\Application.cpp" />
+    <ClCompile Include="..\Shared\Base\Event.cpp" />
+    <ClCompile Include="..\Shared\Base\EventHandler.cpp" />
+    <ClCompile Include="..\Shared\Base\Node.cpp" />
+    <ClCompile Include="..\Shared\Base\Timer.cpp" />
+    <ClCompile Include="..\Shared\Characters.cpp" />
+    <ClCompile Include="..\Shared\coin.cpp" />
+    <ClCompile Include="..\Shared\CoinShop.cpp" />
+    <ClCompile Include="..\Shared\CoinShopItem.cpp" />
+    <ClCompile Include="..\Shared\CoinShopTab.cpp" />
+    <ClCompile Include="..\Shared\Debug\Debug.cpp" />
+    <ClCompile Include="..\Shared\File\FileBin.cpp" />
+    <ClCompile Include="..\Shared\File\FileIni.cpp" />
+    <ClCompile Include="..\Shared\Globals\cipher.cpp" />
+    <ClCompile Include="..\Shared\Globals\common.cpp" />
+    <ClCompile Include="..\Shared\Globals\point.cpp" />
+    <ClCompile Include="..\Shared\Globals\strings.cpp" />
+    <ClCompile Include="..\Shared\map.cpp" />
+    <ClCompile Include="..\Shared\Mutex\Mutex.cpp" />
+    <ClCompile Include="..\Shared\ProcessEx.cpp" />
+    <ClCompile Include="..\Shared\socket.cpp" />
+    <ClCompile Include="..\Shared\System.cpp" />
+    <ClCompile Include="..\Shared\Time.cpp" />
+    <ClCompile Include="..\Shared\user.cpp" />
+    <ClCompile Include="..\Shared\Window.cpp" />
+    <ClCompile Include="ActionGame.cpp" />
+    <ClCompile Include="AreaServer.cpp" />
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="checkdll.cpp" />
+    <ClCompile Include="cracker.cpp" />
+    <ClCompile Include="fileread.cpp" />
+    <ClCompile Include="playmain.cpp" />
+    <ClCompile Include="playsub.cpp" />
+    <ClCompile Include="record.cpp" />
+    <ClCompile Include="Server\Handle\AgeHandle.cpp" />
+    <ClCompile Include="Server\Handle\ChristmasHandle.cpp" />
+    <ClCompile Include="Server\Handle\CoinShopHandle.cpp" />
+    <ClCompile Include="Server\Handle\DistributorHandle.cpp" />
+    <ClCompile Include="Server\Handle\PartyHandler.cpp" />
+    <ClCompile Include="Server\Handle\QuestHandle.cpp" />
+    <ClCompile Include="Server\Handle\Skill\SkillHandle.cpp" />
+    <ClCompile Include="Server\Handle\Skill\Priestess.cpp" />
+    <ClCompile Include="Server\ServerAccount.cpp" />
+    <ClCompile Include="Server\ServerBellatra.cpp" />
+    <ClCompile Include="Server\ServerBlessCastle.cpp" />
+    <ClCompile Include="Server\ServerCommand.cpp" />
+    <ClCompile Include="Server\ServerHandle.cpp" />
+    <ClCompile Include="Server\ServerItem.cpp" />
+    <ClCompile Include="Server\ServerMap.cpp" />
+    <ClCompile Include="Server\Server.cpp" />
+    <ClCompile Include="Server\ServerCharacter.cpp" />
+    <ClCompile Include="Server\ServerChat.cpp" />
+    <ClCompile Include="Server\ServerInfo.cpp" />
+    <ClCompile Include="Server\ServerLog.cpp" />
+    <ClCompile Include="Server\ServerNet.cpp" />
+    <ClCompile Include="Server\ServerPackets.cpp" />
+    <ClCompile Include="Server\ServerPvP.cpp" />
+    <ClCompile Include="Server\ServerQuest.cpp" />
+    <ClCompile Include="Server\ServerSocket.cpp" />
+    <ClCompile Include="Server\ServerUnit.cpp" />
+    <ClCompile Include="Server\ServerUser.cpp" />
+    <ClCompile Include="Server\ServerUserInfo.cpp" />
+    <ClCompile Include="Server\ServerWindow.cpp" />
+    <ClCompile Include="Server\SQLConnection.cpp" />
+    <ClCompile Include="SkillSub.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="smlib3d\smgeosub.cpp" />
+    <ClCompile Include="smlib3d\smMap3d.cpp" />
+    <ClCompile Include="smlib3d\smmatrix.cpp" />
+    <ClCompile Include="smlib3d\smObj3d.cpp" />
+    <ClCompile Include="smlib3d\smRead3d.cpp" />
+    <ClCompile Include="smlib3d\smSin.cpp" />
+    <ClCompile Include="smlib3d\smStage3d.cpp" />
+    <ClCompile Include="smlib3d\smStgObj.cpp" />
+    <ClCompile Include="smlib3d\smTexture.cpp" />
+    <ClCompile Include="sinbaram\sinItem.cpp" />
+    <ClCompile Include="sinbaram\sinMain.cpp" />
+    <ClCompile Include="sinbaram\sinQuest.cpp" />
+    <ClCompile Include="sinbaram\sinSkill.cpp" />
+    <ClCompile Include="sinbaram\sinSkill_Info.cpp" />
+    <ClCompile Include="sinbaram\sinSubMain.cpp" />
+    <ClCompile Include="sinbaram\sinTrade.cpp" />
+    <ClCompile Include="sinbaram\SkillFunction\Morayion.cpp" />
+    <ClCompile Include="sinbaram\SkillFunction\Tempskron.cpp" />
+    <ClCompile Include="SrcServer\ClientFuncPos.cpp" />
+    <ClCompile Include="SrcServer\DllServer.cpp" />
+    <ClCompile Include="SrcServer\gameSQL.cpp" />
+    <ClCompile Include="netplay.cpp" />
+    <ClCompile Include="SrcServer\OnSever.cpp" />
+    <ClCompile Include="SrcServer\openlive.cpp" />
+    <ClCompile Include="SrcServer\PartySever.cpp" />
+    <ClCompile Include="SrcServer\Svr_Damge.cpp" />
+    <ClCompile Include="SrcServer\svrEventSpawn.cpp" />
+    <ClCompile Include="Winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Shared\account.h" />
+    <ClInclude Include="..\Shared\Application.h" />
+    <ClInclude Include="..\Shared\Base\Base.h" />
+    <ClInclude Include="..\Shared\Base\Event.h" />
+    <ClInclude Include="..\Shared\Base\EventHandler.h" />
+    <ClInclude Include="..\Shared\Base\Node.h" />
+    <ClInclude Include="..\Shared\Base\Timer.h" />
+    <ClInclude Include="..\Shared\Characters.h" />
+    <ClInclude Include="..\Shared\chat.h" />
+    <ClInclude Include="..\Shared\coin.h" />
+    <ClInclude Include="..\Shared\CoinShop.h" />
+    <ClInclude Include="..\Shared\CoinShopItem.h" />
+    <ClInclude Include="..\Shared\CoinShopTab.h" />
+    <ClInclude Include="..\Shared\CPoint.h" />
+    <ClInclude Include="..\Shared\Debug\Debug.h" />
+    <ClInclude Include="..\Shared\Dialog.h" />
+    <ClInclude Include="..\Shared\File\File.h" />
+    <ClInclude Include="..\Shared\File\FileBin.h" />
+    <ClInclude Include="..\Shared\File\FileIni.h" />
+    <ClInclude Include="..\Shared\Globals\cipher.h" />
+    <ClInclude Include="..\Shared\Globals\common.h" />
+    <ClInclude Include="..\Shared\Globals\def.h" />
+    <ClInclude Include="..\Shared\Globals\memory.h" />
+    <ClInclude Include="..\Shared\Globals\point.h" />
+    <ClInclude Include="..\Shared\Globals\strings.h" />
+    <ClInclude Include="..\Shared\item.h" />
+    <ClInclude Include="..\Shared\Language.h" />
+    <ClInclude Include="..\Shared\List.h" />
+    <ClInclude Include="..\Shared\map.h" />
+    <ClInclude Include="..\Shared\Mutex\Mutex.h" />
+    <ClInclude Include="..\Shared\Packets.h" />
+    <ClInclude Include="..\Shared\party.h" />
+    <ClInclude Include="..\Shared\premiumstruct.h" />
+    <ClInclude Include="..\Shared\ProcessEx.h" />
+    <ClInclude Include="..\Shared\Shared.h" />
+    <ClInclude Include="..\Shared\skill.h" />
+    <ClInclude Include="..\Shared\socket.h" />
+    <ClInclude Include="..\Shared\sound.h" />
+    <ClInclude Include="..\Shared\System.h" />
+    <ClInclude Include="..\Shared\Time.h" />
+    <ClInclude Include="..\Shared\Unit.h" />
+    <ClInclude Include="..\Shared\user.h" />
+    <ClInclude Include="..\Shared\Window.h" />
+    <ClInclude Include="AreaServer.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="ItemForm.h" />
+    <ClInclude Include="NetType.hpp" />
+    <ClInclude Include="playmodel.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Server\Handle\AgeHandle.h" />
+    <ClInclude Include="Server\Handle\ChristmasHandle.h" />
+    <ClInclude Include="Server\Handle\CoinShopHandle.h" />
+    <ClInclude Include="Server\Handle\DistributorHandle.h" />
+    <ClInclude Include="Server\Handle\MixHandle.h" />
+    <ClInclude Include="Server\Handle\Skill\SkillHandle.h" />
+    <ClInclude Include="Server\Handle\Skill\Priestess.h" />
+    <ClInclude Include="Server\ServerBellatra.h" />
+    <ClInclude Include="Server\Handle\Handle.h" />
+    <ClInclude Include="Server\Handle\PartyHandle.h" />
+    <ClInclude Include="Server\Handle\QuestHandle.h" />
+    <ClInclude Include="Server\ServerAccount.h" />
+    <ClInclude Include="Server\ServerBlessCastle.h" />
+    <ClInclude Include="Server\ServerCharacter.h" />
+    <ClInclude Include="Server\ServerChat.h" />
+    <ClInclude Include="Server\ServerCommand.h" />
+    <ClInclude Include="Server\ServerHandle.h" />
+    <ClInclude Include="Server\ServerItem.h" />
+    <ClInclude Include="Server\ServerLog.h" />
+    <ClInclude Include="Server\ServerMap.h" />
+    <ClInclude Include="Server\ServerNet.h" />
+    <ClInclude Include="Server\ServerPackets.h" />
+    <ClInclude Include="Server\Server.h" />
+    <ClInclude Include="Server\ServerInfo.h" />
+    <ClInclude Include="Server\Servercore.h" />
+    <ClInclude Include="Server\ServerPvP.h" />
+    <ClInclude Include="Server\ServerQuest.h" />
+    <ClInclude Include="Server\ServerSocket.h" />
+    <ClInclude Include="Server\ServerUnit.h" />
+    <ClInclude Include="Server\ServerUser.h" />
+    <ClInclude Include="Server\ServerUserInfo.h" />
+    <ClInclude Include="Server\ServerWindow.h" />
+    <ClInclude Include="Server\SQLConnection.h" />
+    <ClInclude Include="smPacket.h" />
+    <ClInclude Include="smlib3d\smGeosub.h" />
+    <ClInclude Include="smlib3d\smMap3d.h" />
+    <ClInclude Include="smlib3d\smObj3d.h" />
+    <ClInclude Include="smlib3d\smSin.h" />
+    <ClInclude Include="smlib3d\smStage3d.h" />
+    <ClInclude Include="smlib3d\smStgObj.h" />
+    <ClInclude Include="smlib3d\smTexture.h" />
+    <ClInclude Include="smlib3d\smType.h" />
+    <ClInclude Include="sinbaram\sinCraftItem.h" />
+    <ClInclude Include="sinbaram\sinItem.h" />
+    <ClInclude Include="sinbaram\sinLinkHeader.h" />
+    <ClInclude Include="sinbaram\sinMain.h" />
+    <ClInclude Include="sinbaram\sinQuest.h" />
+    <ClInclude Include="sinbaram\sinSkill.h" />
+    <ClInclude Include="sinbaram\sinSubMain.h" />
+    <ClInclude Include="sinbaram\sinTrade.h" />
+    <ClInclude Include="sinbaram\SkillFunction\Morayion.h" />
+    <ClInclude Include="sinbaram\SkillFunction\Tempskron.h" />
+    <ClInclude Include="HoBaram\HoLinkHeader.h" />
+    <ClInclude Include="SrcServer\E_serverlog.h" />
+    <ClInclude Include="SrcServer\Gamesql.h" />
+    <ClInclude Include="SrcServer\openlive.h" />
+    <ClInclude Include="SrcServer\svrEventGame.h" />
+    <ClInclude Include="SrcServer\svrEventSpawn.h" />
+    <ClInclude Include="SrcServer\svrHaQuest.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SrcServer\DllServer.h" />
+    <ClInclude Include="language.h" />
+    <ClInclude Include="SrcServer\onserver.h" />
+    <ClInclude Include="SrcServer\ServerMsg.h" />
+    <ClInclude Include="SrcServer\svr_Damage.h" />
+    <ClInclude Include="character.h" />
+    <ClInclude Include="cracker.h" />
+    <ClInclude Include="fileread.h" />
+    <ClInclude Include="netplay.h" />
+    <ClInclude Include="playmain.h" />
+    <ClInclude Include="playsub.h" />
+    <ClInclude Include="record.h" />
+    <ClInclude Include="SkillSub.h" />
+    <ClInclude Include="effectsnd.h" />
+    <ClInclude Include="smlib3d\smd3d.h" />
+    <ClInclude Include="smlib3d\smmatrix.h" />
+    <ClInclude Include="smlib3d\smRead3d.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="8888.bmp" />
+    <None Include="icon1.ico" />
+    <None Include="icon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Server.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

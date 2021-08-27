@@ -1,0 +1,28 @@
+#define _LANGUAGE_JAPANESE
+#define _LANGUAGE_JAPANESE_FIELDLEVEL
+
+#define	ATTACK_RATE		70
+#define	DEFENSE_RATE	80
+
+#define	_NEW_PARTRADE
+
+#define	_WINMODE_DEBUG
+
+//#define _XIGNCODE_SERVER
+
+#define	_PLAY_MORYON
+
+#define	_PACKET_PASS_XOR	0
+
+#define	_MODE_EXP64
+
+
+#define	_SECURITY_UPDATE
+
+#ifdef	_LANGUAGE_JAPANESE	
+#define _LANGUAGE_ENGLISH_NEXTUP 
+#define _QUEST_CHAOS_WING
+#define	_ON_MAP
+#define _ON_PRIVATE_SHOP
+#define	_ON_PET
+#endif
